@@ -47,3 +47,11 @@ def division_detail(request, id):
     elif request.method == 'DELETE':
         division.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+        
+        
+        
+        
+        
+        ###### url.py
+        path('divisions/', views.division_list),
+        path('divisions/<int:id>', views.division_detail),
