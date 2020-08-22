@@ -107,9 +107,9 @@ def delete_division(request, id):
         return JsonResponse({'error': 'Something went wrong'}, safe=False,
         status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-
-    # path('getalldivisions', views.get_divisions),
-    # path('getdivision/<int:id>', views.get_division),
-    # path('adddivision', views.add_division),
-    # path('updatedivision/<int:id>', views.update_division),
-    # path('deletedivision/<int:id>', views.delete_division),
+   --------------########### URL Pattern ###########--------------
+         path('getalldivisions', views.get_divisions),
+         path('getdivision/<int:id>', views.get_division),
+         path('adddivision', views.add_division),
+         path('updatedivision/<int:id>', views.update_division),
+         path('deletedivision/<int:id>', views.delete_division),
